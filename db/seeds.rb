@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Clear existing data
+Student.destroy_all
+
+# Create students
+Student.create!(first_name: 'John', last_name: 'Doe', grade: 85)
+Student.create!(first_name: 'Jane', last_name: 'Smith', grade: 92)
+Student.create!(first_name: 'Michael', last_name: 'Johnson', grade: 78)
+# Add more student records as needed
